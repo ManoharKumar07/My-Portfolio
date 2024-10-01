@@ -2,23 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
+/* body {
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 @layer utilities {
   .text-balance {
@@ -88,5 +74,10 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer base {
+  body {
+    @apply font-primary bg-white text-white leading-loose;
   }
 }
