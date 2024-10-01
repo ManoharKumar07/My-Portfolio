@@ -18,7 +18,7 @@ module.exports = {
       xl: "1200px",
     },
     fontFamily: {
-      primary: "var(--font-jetbrainsMono)",
+      primary: ["JetBrains Mono", "monospace"],
     },
     extend: {
       colors: {
@@ -33,8 +33,12 @@ module.exports = {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#1c1c22", // Defining the primary color here
           foreground: "hsl(var(--primary-foreground))",
+        },
+        accent: {
+          DEFAULT: "#00ff99", // Defining the accent color here
+          hover: "#00e187", // Accent hover color
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -44,10 +48,6 @@ module.exports = {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -55,18 +55,6 @@ module.exports = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        chart: {
-          1: "hsl(var(--chart-1))",
-          2: "hsl(var(--chart-2))",
-          3: "hsl(var(--chart-3))",
-          4: "hsl(var(--chart-4))",
-          5: "hsl(var(--chart-5))",
-          primary: "#1c1c22",
-          accent: {
-            DEFAULT: "#00ff99",
-            hover: "#00e187",
-          },
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
