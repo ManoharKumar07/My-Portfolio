@@ -2,6 +2,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
 
+//Components
+import Header from "@/components/Header";
+
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -35,6 +38,7 @@ export default function RootLayout({ children }) {
           antialiased
         `}
       >
+        <Header />
         {children}
       </body>
     </html>
