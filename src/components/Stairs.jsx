@@ -42,3 +42,27 @@ const Stairs = () => {
 };
 
 export default Stairs;
+
+// import { motion } from "framer-motion";
+
+// const pageTransition = {
+//   initial: { opacity: 0 }, // Starts with invisible page
+//   animate: { opacity: 1 }, // Fades in
+//   exit: { opacity: 0 }, // Fades out when exiting
+// };
+
+// const PageTransition = ({ children }) => {
+//   return (
+//     <motion.div
+//       initial="initial"
+//       animate="animate"
+//       exit="exit"
+//       variants={pageTransition}
+//       transition={{ duration: 0.4 }} // Transition duration
+//     >
+//       {children}
+//     </motion.div>
+//   );
+// };
+
+// export default PageTransition;
