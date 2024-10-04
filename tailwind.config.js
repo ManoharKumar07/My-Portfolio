@@ -37,8 +37,12 @@ module.exports = {
           foreground: "hsl(var(--primary-foreground))",
         },
         accent: {
-          DEFAULT: "#00ff99", // Defining the accent color here
+          DEFAULT: "#00FFFF", // Defining the accent color here
           hover: "#00e187", // Accent hover color
+        },
+        accentg: {
+          DEFAULT: "#00ff99", // Defining the accent color here
+          // Accent hover color
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
