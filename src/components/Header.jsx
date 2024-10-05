@@ -5,9 +5,12 @@ import Nav from "./Nav";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white ">
-      <div className="container mx-auto flex justify-between items-center ">
-        <Link href="/">
+    <header className="py-8 xl:py-12 text-white">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link href="/" className="flex items-center gap-2">
+          {/* Logo Image */}
+          <img src="./logolion.png" alt="Logo" className="h-10 w-10" />
+          {/* Name with Logo */}
           <h1 className="text-4xl font-semibold">
             Manohar Kumar <span className="text-accentg">.</span>
           </h1>
